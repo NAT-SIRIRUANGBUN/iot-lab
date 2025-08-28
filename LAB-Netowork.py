@@ -8,5 +8,4 @@ ser = serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=2)
 while True:
 
     line = ser.readline().decode('utf-8').rstrip()
-    url = f'https://iot-backend-iihizzkyh-nat-siriruangbuns-projects.vercel.app/data/Distance?amount={line}'
-    print(url)
+    print(f"Received from ESP32: {line}")
