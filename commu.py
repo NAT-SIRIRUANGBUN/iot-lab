@@ -1,7 +1,7 @@
 import serial
 import time
 
-SERIAL_PORT = '/dev/serial0' # ตรวจสอบให้แน่ใจว่าถูกต้อง
+SERIAL_PORT = '/dev/ttyAMA0'
 BAUD_RATE = 115200
 ser = serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=2)
 
