@@ -1,5 +1,6 @@
 import serial
 import time
+import requests
 
 SERIAL_PORT = '/dev/ttyAMA0'
 BAUD_RATE = 115200
@@ -9,4 +10,5 @@ while True:
 
     line = ser.readline().decode('utf-8').rstrip()
     url = f'https://iot-backend-iihizzkyh-nat-siriruangbuns-projects.vercel.app/data/Distance?amount={line}'
-    print(url)
+    requests.post(url)
+    time.sleep(10)
