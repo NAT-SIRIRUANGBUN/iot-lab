@@ -12,4 +12,4 @@ while True:
     url = f'https://iot-backend-iihizzkyh-nat-siriruangbuns-projects.vercel.app/data/Distance?amount={line}'
     requests.post(url)
     print(f"UPLOADED : {line}")
-    time.sleep(10)
+    time.sleep(1)
