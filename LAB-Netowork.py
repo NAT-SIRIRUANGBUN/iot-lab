@@ -9,5 +9,6 @@ url = 'https://iot-backend-iihizzkyh-nat-siriruangbuns-projects.vercel.app/data/
 while True:
 
     line = ser.readline().decode('utf-8').rstrip()
-    strr = url + str(line)
-    print(strr)
+    print(line)
+    # strr = url + str(line)
+    # print(strr)
